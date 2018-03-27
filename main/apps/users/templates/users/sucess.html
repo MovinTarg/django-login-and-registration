@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sucess!</title>
+        {% load static %}
+        <link rel="stylesheet" types="text/css" href="{% static "users/style.css" %}">
+    </head>
+    <body>
+        <div class='container'>
+            <h1>{{ user.first_name }}, you sucessfully logged in!</h1>
+            <a class="btn" href='/'>Go back</a>
+        </div>
+    </body>
+</html>
